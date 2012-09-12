@@ -1,6 +1,8 @@
 ﻿using System.Reflection;
 using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
+using System.Web;
+using Samples.MVC4.Tools;
 
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
@@ -13,6 +15,10 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyCopyright("Copyright © Microsoft 2012")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
+
+//Register the exception module
+//Took this approach from http://www.devcurry.com/2011/06/aspnet-4-register-http-module-runtime.html
+[assembly: PreApplicationStartMethod(typeof(ModuleRegister), "RigisterExceptionModule")]
 
 // Setting ComVisible to false makes the types in this assembly not visible 
 // to COM components.  If you need to access a type in this assembly from 

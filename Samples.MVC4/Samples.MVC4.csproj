@@ -113,12 +113,14 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Tools\ModuleRegister.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\errors.js" />
     <Content Include="Content\prettify.js" />
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
+    <Content Include="SqlScripts\CheckExceptions.sql" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>

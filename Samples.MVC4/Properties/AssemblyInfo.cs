@@ -18,7 +18,7 @@ using Samples.MVC4.Tools;
 
 //Register the exception module
 //Took this approach from http://www.devcurry.com/2011/06/aspnet-4-register-http-module-runtime.html
-[assembly: PreApplicationStartMethod(typeof(ModuleRegister), "RigisterExceptionModule")]
+//[assembly: PreApplicationStartMethod(typeof(ModuleRegister), "RigisterExceptionModule")]
 
 // Setting ComVisible to false makes the types in this assembly not visible 
 // to COM components.  If you need to access a type in this assembly from 

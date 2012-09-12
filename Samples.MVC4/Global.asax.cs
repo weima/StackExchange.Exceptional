@@ -43,6 +43,8 @@ namespace Samples.MVC4
             BundleConfig.RegisterBundles(BundleTable.Bundles);
         }
 
+       
+
         /// <summary>
         /// Example method to log an exception to the log...that' not shown to the user.
         /// </summary>

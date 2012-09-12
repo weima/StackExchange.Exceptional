@@ -12,7 +12,7 @@ namespace Samples.Console
         {
             // Example of code-only setup, alteratively this can be in the App.config
             // rollupSeconds is 0 so a new file is always generated, for demonstration purposes
-            ErrorStore.Setup("Samples.Console", new JSONErrorStore(path: "Errors", rollupSeconds: 0));
+            //ErrorStore.Setup("Samples.Console", new JSONErrorStore(path: "Errors", rollupSeconds: 0));
 
             // Optional: for logging all unhandled exceptions
             AppDomain.CurrentDomain.UnhandledException += ExceptionalHandler;

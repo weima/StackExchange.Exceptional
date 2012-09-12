@@ -1,2 +1,1 @@
-﻿
-Select * from Exceptions;
+﻿Select * from Exceptions;

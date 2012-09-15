@@ -18,13 +18,13 @@ namespace Samples.MVC4.Controllers
         /// mechanisms are already in place.
         /// </summary>
         /// <remarks>If mapping via RouteAttribute: [Route("errors/{path?}/{subPath?}")]</remarks>
-        public ActionResult Exceptions()
+        public void Exceptions()
         {
             var context = System.Web.HttpContext.Current;
             var page = new HandlerFactory().GetHandler(context, Request.RequestType, Request.Url.ToString(), Request.PathInfo);
             page.ProcessRequest(context);
-
-            return null;
+            //
+            //return null;
         }
 
         public ActionResult Throw()
